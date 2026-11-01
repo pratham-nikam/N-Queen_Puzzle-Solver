@@ -33,11 +33,3 @@ g++ -std=c++11 -Wall -Wextra -pedantic main.cpp -o nqueens_solver.exe
 nqueens_solver.exe
 ```
 
-The program uses standard C++ only. It enables ANSI terminal colors where supported.
-
-## Viva notes
-- A queen attacks along its row, column, and diagonals.
-- Placing exactly one queen per row automatically prevents row conflicts.
-- `isSafe()` checks the column and both diagonal directions.
-- Backtracking returns to the previous row when a candidate position cannot lead to a solution.
-- N=4 has 2 solutions; N=8 has 92 solutions.
